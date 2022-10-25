@@ -1,0 +1,66 @@
+…or create a new repository on the command line
+echo "# Angular" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/nmnhi/Angular.git
+git push -u origin main
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/nmnhi/Angular.git
+git branch -M main
+git push -u origin main
+
+
+token: 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
+
+git add . && git commit -m "initial commit"
+git push -u origin main
+
+git push -u -f origin main
+git remote set-url origin git@github.com:ppreyer/first_app.git
+https://www.digitalocean.com/community/tutorials/how-to-push-an-existing-project-to-github
+
+╭─nhi@nmnhi ~/Desktop/Work/Angular/my-app  ‹main› 
+╰─➤  ls -al ~/.ssh                    
+total 8
+drwx------  2 nhi nhi 4096 Thg 10 10 20:25 .
+drwxr-x--- 26 nhi nhi 4096 Thg 10 12 19:41 ..
+╭─nhi@nmnhi ~/Desktop/Work/Angular/my-app  ‹main› 
+╰─➤  ssh-keygen -t ed25519 -C "minhnhi08061105@gmail.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/home/nhi/.ssh/id_ed25519): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/nhi/.ssh/id_ed25519
+Your public key has been saved in /home/nhi/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:kTeA1DbG1p3dpAzsDoRn+SIowUzMeIoatpisvJ9t8CE minhnhi08061105@gmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|   B...+.o +.o o.|
+|  . B . Oo* +o...|
+| . o . =o=oo  o  |
+|o.. . . .oo.o    |
+|=o.  .  S. +     |
+|+o E .      .    |
+|o   + .          |
+|..  oo           |
+| .oo..           |
++----[SHA256]-----+
+╭─nhi@nmnhi ~/Desktop/Work/Angular/my-app  ‹main› 
+╰─➤  eval "$(ssh-agent -s)"
+Agent pid 10503
+╭─nhi@nmnhi ~/Desktop/Work/Angular/my-app  ‹main› 
+╰─➤  ssh-add ~/.ssh/nmnhi     
+/home/nhi/.ssh/nmnhi: No such file or directory
+╭─nhi@nmnhi ~/Desktop/Work/Angular/my-app  ‹main› 
+╰─➤  ssh-add ~/.ssh/nmnhi/10503                                                   1 ↵
+/home/nhi/.ssh/nmnhi/10503: No such file or directory
+╭─nhi@nmnhi ~/Desktop/Work/Angular/my-app  ‹main› 
+╰─➤  cat ~/.ssh/id_ed25519.pub                                                    1 ↵
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIE6SaQgyv3LtwuZ02YPeapuPmNmHiqGtot9DJuv3xvf/ minhnhi08061105@gmail.com
+╭─nhi@nmnhi ~/Desktop/Work/Angular/my-app  ‹main› 
+╰─➤  
+https://therichpost.com/build-complete-ecommerce-website-in-angular-13-home-page/
